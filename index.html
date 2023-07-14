@@ -37,7 +37,7 @@
     <section class="hero">
         <div class="container">
         <h1 class="hero-title">Effective Solutions for Your Business</h1>
-        <button class="hero-btn" type="button">Order Service</button>
+        <button class="hero-btn" type="button" data-modal-open>Order Service</button>
     </div>
     </section>
     <section class="qualities">
@@ -420,12 +420,15 @@
         </div>
         </div>
     </footer> 
-    <div class="backdrop">
+    <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-        <button type="button"><symbol id="icon-close-black-18dp-2-1-1" viewBox="0 0 32 32">
-            <path d="M32 3.224l-3.224-3.224-12.776 12.776-12.776-12.776-3.224 3.224 12.776 12.776-12.776 12.776 3.224 3.224 12.776-12.776 12.776 12.776 3.224-3.224-12.776-12.776 12.776-12.776z"></path>
-            </symbol></button>
+        <button type="button" class="modal-close-btn" data-modal-close>  
+            <svg class="modal-svg" height="8" width="8">
+            <use href="./images/symbol-defs.svg#icon-close-black-18dp-2-1-1"></use>
+        </svg>
+         </button>
     </div>
     </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
