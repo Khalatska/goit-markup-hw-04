@@ -85,6 +85,22 @@ body {  background-color: #FFFFFF;
 .header-item-menu:hover,
 .header-item-menu:focus{ color: var(--ocean);
 }
+
+.current {position: relative;
+color: var(--ocean);}
+
+.current::after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background-color: var(--ocean);
+    bottom: -1px;
+    left: 0;
+
+}
+
+
 .address { font-style: normal;
     display: flex;
     align-items: center;
@@ -110,9 +126,16 @@ gap: 40px;
 
 /*----------HERO----------*/
 
-.hero { background-color: var(--navyblue);
+.hero { 
+    background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/people-office\ 1\ \(1\).jpg); 
+    max-width: 1440px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding-top: 188px;
     padding-bottom: 188px;
+    margin-left: auto;
+    margin-right: auto;
      
 }
 .hero-title { color: var(--white);
