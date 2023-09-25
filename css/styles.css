@@ -36,7 +36,6 @@ body {  background-color: #FFFFFF;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .top { background-color: var(--white);
@@ -54,7 +53,6 @@ body {  background-color: #FFFFFF;
  
 
 .header-container {display: flex;
-    border-bottom: 1px solid var(--cornflower);
 }
 
 .header-logo-link { color: var(--iris);
@@ -193,7 +191,7 @@ gap: 40px;
 .qualities-item { width: calc((100% - 24px*2)/4);
 }
 
-.qualities-svg-border { width: 264px;
+.qualities-svg-border { 
 height: 112px;
 margin-bottom: 19px;
 display: flex;
@@ -548,7 +546,6 @@ gap: 16px;
 .service-list-link:hover .text-over,
 .service-list-link:focus .text-over { 
     transform: translateY(0%);
-    cursor: pointer;
      
      
 }
@@ -619,6 +616,7 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     height: 100%;
     position: fixed;
     top: 0;
+    left: 0;
     background-color: rgba(46, 47, 66, 0.40);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
